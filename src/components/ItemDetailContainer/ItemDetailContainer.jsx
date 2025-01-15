@@ -34,7 +34,7 @@ function ItemDetailContainer() {
               <ItemCount
                 stock={item.stock}
                 initial={1}
-                onAdd={(quantity) => addToCart(productos, quantity)}
+                onAdd={(quantity) => addToCart(item, quantity)}
               />
             ) : 
             (<p className="agotado">Agotado!!</p>)
